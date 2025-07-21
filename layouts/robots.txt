@@ -1,3 +1,4 @@
-{{- printf "User-agent: *\n" -}}
-{{- printf "Allow: /\n" -}}
-{{- printf "Sitemap: %s/sitemap.xml\n" .Site.BaseURL -}}
+User-agent: *
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}

@@ -3,13 +3,4 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "ananke"
 
-[outputFormats.RobotsTXT]
-mediaType = "text/plain"
-baseName = "robots"
-isPlainText = true
-notAlternative = true
-permalinkable = true
-
-[outputs]
-home = ["HTML", "RSS", "RobotsTXT"]
-
+enableRobotsTXT = true

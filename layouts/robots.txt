@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: {{ "sitemap.xml" | absURL }}
+Sitemap: https://mr-lightt-webforge-hugo-lab.netlify.app/sitemap.xml

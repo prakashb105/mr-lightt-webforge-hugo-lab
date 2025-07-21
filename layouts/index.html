@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Inside <head> -->
+    <title>{{ .Title }}</title>
+    <meta name="description" content="{{ .Params.description }}" />
+    <meta name="keywords" content="{{ delimit .Params.keywords ", " }}">
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:description" content="{{ .Params.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:description" content="{{ .Params.description }}" />
+  </head>
+  <body>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.description }}</p>
+    <p>{{ .Content }}</p>
+    {{ partial "site-footer.html" . }}
+  </body>
+</html>
